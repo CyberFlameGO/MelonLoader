@@ -93,17 +93,17 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Download core artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: MLCoreDebug
           path: Output/Debug/x64/MelonLoader/
       - name: Download proxy x64
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: MLProxyX64
           path: Output/Debug/x64/
       - name: Download bootstrap x64
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: MLBootstrapX64
           path: Output/Debug/x64/MelonLoader/Dependencies/
@@ -136,17 +136,17 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Download core artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: MLCoreDebug
           path: Output/Debug/x86/MelonLoader/
       - name: Download proxy x86
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: MLProxyX86
           path: Output/Debug/x86/
       - name: Download bootstrap x86
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: MLBootstrapX86
           path: Output/Debug/x86/MelonLoader/Dependencies/
@@ -179,17 +179,17 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Download core artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: MLCoreRelease
           path: Output/Release/x64/MelonLoader/
       - name: Download proxy x64
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: MLProxyX64
           path: Output/Release/x64/
       - name: Download bootstrap x64
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: MLBootstrapX64
           path: Output/Release/x64/MelonLoader/Dependencies/
@@ -222,17 +222,17 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Download core artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: MLCoreRelease
           path: Output/Release/x86/MelonLoader/
       - name: Download proxy x86
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: MLProxyX86
           path: Output/Release/x86/
       - name: Download bootstrap x86
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: MLBootstrapX86
           path: Output/Release/x86/MelonLoader/Dependencies/
